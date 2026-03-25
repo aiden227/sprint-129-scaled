@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>129 Scaled — Your Strategy Call Is Confirmed</title>
+    <meta name="description" content="Your strategy call with 129 Scaled is confirmed. Complete your prep form and watch these videos before the call.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Onest:wght@700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --magenta: #DD02F5;
+            --navy: #02070F;
+            --slate-dark: #0F172A;
+            --page-bg: #F6F7FB;
+            --card-bg: #F1F2F9;
+            --alt-bg: #EBEDF7;
+            --heading: #1F2224;
+        }
+        body { font-family: 'Inter', sans-serif; background: var(--page-bg); color: #000; }
+        .font-heading { font-family: 'Inter', sans-serif; }
+        .font-section { font-family: 'Poppins', sans-serif; }
+        .font-badge { font-family: 'Onest', sans-serif; }
+
+        .bg-brand-magenta { background-color: var(--magenta); }
+        .text-brand-magenta { color: var(--magenta); }
+        .border-brand-magenta { border-color: var(--magenta); }
+        .bg-brand-navy { background-color: var(--navy); }
+        .text-brand-navy { color: var(--navy); }
+        .bg-brand-slate { background-color: var(--slate-dark); }
+        .bg-page { background-color: var(--page-bg); }
+        .bg-card { background-color: var(--card-bg); }
+        .bg-alt { background-color: var(--alt-bg); }
+        .text-heading { color: var(--heading); }
+
+        .btn-primary {
+            background: var(--magenta);
+            color: #fff;
+            border-radius: 9999px;
+            padding: 14px 28px;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .btn-primary:hover { filter: brightness(110%); transform: translateY(-1px); }
+
+        .section-pill {
+            display: inline-block;
+            background: #fff;
+            color: var(--magenta);
+            font-family: 'Onest', sans-serif;
+            font-weight: 700;
+            font-size: 14px;
+            padding: 8px 20px;
+            border-radius: 9999px;
+            border: 1px solid #E5E6ED;
+            text-transform: uppercase;
+        }
+
+        .dark-section {
+            background: var(--navy);
+            position: relative;
+            overflow: hidden;
+        }
+        .dark-section::before {
+            content: '';
+            position: absolute;
+            top: -10%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            height: 60%;
+            background: radial-gradient(50% 50% at 50% 0%, var(--magenta) 0%, transparent 70%);
+            opacity: 0.15;
+            pointer-events: none;
+        }
+
+        .glow-bottom::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            height: 40%;
+            background: radial-gradient(50% 50% at 50% 100%, var(--magenta) 0%, transparent 70%);
+            opacity: 0.1;
+            pointer-events: none;
+        }
+
+        .video-placeholder {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            border: 1px solid rgba(221, 2, 245, 0.2);
+        }
+
+        @keyframes pulseRing {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(221, 2, 245, 0.3); }
+            50% { box-shadow: 0 0 0 12px rgba(221, 2, 245, 0); }
+        }
+        .pulse-ring { animation: pulseRing 2s ease-in-out infinite; }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(12px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in { animation: fadeIn 0.7s ease-out forwards; }
+
+        .video-card {
+            background: #fff;
+            border: 1px solid #E5E6ED;
+            border-radius: 18px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .video-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+
+        .check-icon { color: #22c55e; }
+        .x-icon { color: #ef4444; }
+    </style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 py-4">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+        <span class="font-heading font-bold text-xl tracking-tight text-heading">129 SCALED</span>
+        <div class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+            <span class="text-sm font-semibold text-heading">Application Received</span>
+        </div>
+    </div>
+</nav>
+
+<!-- CONFIRMATION HERO -->
+<section class="dark-section py-16 md:py-24 relative">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+        <!-- Success Badge -->
+        <div class="w-20 h-20 bg-brand-magenta rounded-full flex items-center justify-center pulse-ring mx-auto mb-8 fade-in">
+            <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+        </div>
+
+        <h1 class="font-heading text-white font-bold text-3xl md:text-5xl leading-tight mb-4 fade-in">Your Strategy Call Is Confirmed.</h1>
+        <p class="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto mb-10 fade-in">Before we get on the phone, do these three things so we don't waste each other's time.</p>
+
+        <!-- Hero Video -->
+        <div class="video-placeholder aspect-video rounded-2xl shadow-2xl flex flex-col items-center justify-center group cursor-pointer mb-10 max-w-2xl mx-auto fade-in">
+            <div class="w-20 h-20 rounded-full bg-brand-magenta/80 flex items-center justify-center mb-4 group-hover:bg-brand-magenta transition-colors">
+                <svg class="w-8 h-8 text-white translate-x-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg>
+            </div>
+            <p class="text-sm font-bold tracking-widest uppercase text-white/70">Do this before your call.</p>
+            <p class="text-xs text-white/40 mt-1">Personal Message from Kariem Maksoud</p>
+        </div>
+
+        <!-- Primary CTA -->
+        <div class="fade-in">
+            <a href="#" class="btn-primary text-lg py-4 px-10 shadow-lg shadow-brand-magenta/20">Complete Your Prep Form (5 Minutes) <span>&rsaquo;</span></a>
+            <p class="text-gray-400 text-sm mt-4">Not the right time? <a href="#" class="text-brand-magenta hover:underline">Reschedule here.</a></p>
+        </div>
+
+        <!-- What Happens Next -->
+        <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 mt-12 max-w-xl mx-auto text-left fade-in">
+            <p class="text-xs font-bold uppercase tracking-widest text-brand-magenta mb-4">What Happens Next</p>
+            <div class="space-y-4">
+                <div class="flex items-start gap-3">
+                    <div class="w-6 h-6 bg-brand-magenta/20 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <span class="text-xs font-bold text-brand-magenta">1</span>
+                    </div>
+                    <p class="text-sm text-gray-200"><span class="font-bold text-white">Complete your prep form</span> — click the button above. Takes 5 minutes. We use your answers to pull real data for your specific situation.</p>
+                </div>
+                <div class="flex items-start gap-3">
+                    <div class="w-6 h-6 bg-brand-magenta/20 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <span class="text-xs font-bold text-brand-magenta">2</span>
+                    </div>
+                    <p class="text-sm text-gray-200"><span class="font-bold text-white">Check your email</span> — confirmation and calendar invite are on the way. Add it to your calendar now.</p>
+                </div>
+                <div class="flex items-start gap-3">
+                    <div class="w-6 h-6 bg-brand-magenta/20 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <span class="text-xs font-bold text-brand-magenta">3</span>
+                    </div>
+                    <p class="text-sm text-gray-200"><span class="font-bold text-white">Show up prepared</span> — 30-minute call with Kariem. He shares live campaign data, runs ROI math for your business. No slide deck. Real numbers.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- BREAKOUT VIDEOS -->
+<section class="py-20 md:py-28 bg-page">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <span class="section-pill mb-4">Watch Before Your Call</span>
+            <h2 class="font-section text-heading font-medium text-3xl md:text-4xl mt-6 mb-4">Everything You Need to Know Before We Talk</h2>
+            <p class="text-gray-500 max-w-2xl mx-auto">Each video covers one specific question. Watch the ones that matter to you. Skip the rest. They're short.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- Video 1 -->
+            <div class="video-card">
+                <div class="video-placeholder aspect-video flex flex-col items-center justify-center group cursor-pointer">
+                    <div class="w-16 h-16 rounded-full bg-brand-magenta/80 flex items-center justify-center group-hover:bg-brand-magenta transition-colors">
+                        <svg class="w-7 h-7 text-white translate-x-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg>
+                    </div>
+                    <p class="text-xs font-bold tracking-widest uppercase text-white/60 mt-3">2:00 – 2:30</p>
+                </div>
+                <div class="p-6">
+                    <span class="text-xs font-bold bg-brand-magenta/10 text-brand-magenta px-3 py-1 rounded-full">Most Common Question</span>
+                    <h3 class="font-bold text-heading text-lg mt-3 mb-2">How It Actually Works</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">How we send 5,000–10,000 InMails per month from a single account — and why that changes the math on LinkedIn outreach.</p>
+                    <div class="mt-4 pt-4 border-t border-gray-100 flex items-center justify-between">
+                        <a href="#" class="btn-primary text-sm py-2.5 px-5">Complete Your Prep Form</a>
+                        <a href="#" class="text-brand-magenta text-xs hover:underline">Reschedule</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video 2 -->
+            <div class="video-card">
+                <div class="video-placeholder aspect-video flex flex-col items-center justify-center group cursor-pointer">
+                    <div class="w-16 h-16 rounded-full bg-brand-magenta/80 flex items-center justify-center group-hover:bg-brand-magenta transition-colors">
+                        <svg class="w-7 h-7 text-white translate-x-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg>
+                    </div>
+                    <p class="text-xs font-bold tracking-widest uppercase text-white/60 mt-3">2:00 – 2:30</p>
+                </div>
+                <div class="p-6">
+                    <span class="text-xs font-bold bg-brand-magenta/10 text-brand-magenta px-3 py-1 rounded-full">Qualification</span>
+                    <h3 class="font-bold text-heading text-lg mt-3 mb-2">Who This Is For and Who It's Not For</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Hard qualification criteria. If any of these don't apply to you, cancel the call now. Seriously.</p>
+                    <div class="mt-4 pt-4 border-t border-gray-100 flex items-center justify-between">
+                        <a href="#" class="btn-primary text-sm py-2.5 px-5">Complete Your Prep Form</a>
+                        <a href="#" class="text-brand-magenta text-xs hover:underline">Reschedule</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video 3 -->
+            <div class="video-card">
+                <div class="video-placeholder aspect-video flex flex-col items-center justify-center group cursor-pointer">
+                    <div class="w-16 h-16 rounded-full bg-brand-magenta/80 flex items-center justify-center group-hover:bg-brand-magenta transition-colors">
+                        <svg class="w-7 h-7 text-white translate-x-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg>
+                    </div>
+                    <p class="text-xs font-bold tracking-widest uppercase text-white/60 mt-3">3:00 – 3:30</p>
+                </div>
+                <div class="p-6">
+                    <span class="text-xs font-bold bg-brand-magenta/10 text-brand-magenta px-3 py-1 rounded-full">System Deep Dive</span>
+                    <h3 class="font-bold text-heading text-lg mt-3 mb-2">The 5-Layer System with Proof</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Volume. Targeting. Copy. Inbox management. Guarantee. Here's how all five work together to hit 20+ meetings per month.</p>
+                    <div class="mt-4 pt-4 border-t border-gray-100">
+                        <a href="#" class="btn-primary text-sm py-2.5 px-5">Complete Your Prep Form</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video 4 -->
+            <div class="video-card">
+                <div class="video-placeholder aspect-video flex flex-col items-center justify-center group cursor-pointer">
+                    <div class="w-16 h-16 rounded-full bg-brand-magenta/80 flex items-center justify-center group-hover:bg-brand-magenta transition-colors">
+                        <svg class="w-7 h-7 text-white translate-x-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg>
+                    </div>
+                    <p class="text-xs font-bold tracking-widest uppercase text-white/60 mt-3">2:00 – 2:30</p>
+                </div>
+                <div class="p-6">
+                    <span class="text-xs font-bold bg-brand-magenta/10 text-brand-magenta px-3 py-1 rounded-full">Account Safety</span>
+                    <h3 class="font-bold text-heading text-lg mt-3 mb-2">"Won't I Get Banned?"</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">We don't touch your personal LinkedIn. We build a dedicated, US-based, ID-verified profile. Zero bans across every account we've ever managed.</p>
+                    <div class="mt-4 pt-4 border-t border-gray-100">
+                        <a href="#" class="btn-primary text-sm py-2.5 px-5">Complete Your Prep Form</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video 5 -->
+            <div class="video-card">
+                <div class="video-placeholder aspect-video flex flex-col items-center justify-center group cursor-pointer">
+                    <div class="w-16 h-16 rounded-full bg-brand-magenta/80 flex items-center justify-center group-hover:bg-brand-magenta transition-colors">
+                        <svg class="w-7 h-7 text-white translate-x-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg>
+                    </div>
+                    <p class="text-xs font-bold tracking-widest uppercase text-white/60 mt-3">2:30 – 3:00</p>
+                </div>
+                <div class="p-6">
+                    <span class="text-xs font-bold bg-brand-magenta/10 text-brand-magenta px-3 py-1 rounded-full">Trust</span>
+                    <h3 class="font-bold text-heading text-lg mt-3 mb-2">"I've Been Burned by Agencies Before"</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">20 qualified meetings or we work for free. Month to month. Full transparency. Here's exactly how this is different.</p>
+                    <div class="mt-4 pt-4 border-t border-gray-100">
+                        <a href="#" class="btn-primary text-sm py-2.5 px-5">Complete Your Prep Form</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video 6 -->
+            <div class="video-card">
+                <div class="video-placeholder aspect-video flex flex-col items-center justify-center group cursor-pointer">
+                    <div class="w-16 h-16 rounded-full bg-brand-magenta/80 flex items-center justify-center group-hover:bg-brand-magenta transition-colors">
+                        <svg class="w-7 h-7 text-white translate-x-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg>
+                    </div>
+                    <p class="text-xs font-bold tracking-widest uppercase text-white/60 mt-3">2:30 – 3:00</p>
+                </div>
+                <div class="p-6">
+                    <span class="text-xs font-bold bg-brand-magenta/10 text-brand-magenta px-3 py-1 rounded-full">ROI</span>
+                    <h3 class="font-bold text-heading text-lg mt-3 mb-2">"Is It Worth the Investment?"</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Cost-per-meeting math. SDR comparison. ROI breakdown. Close 2–3 deals and the retainer pays for itself for the year.</p>
+                    <div class="mt-4 pt-4 border-t border-gray-100">
+                        <a href="#" class="btn-primary text-sm py-2.5 px-5">Complete Your Prep Form</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video 7 -->
+            <div class="video-card">
+                <div class="video-placeholder aspect-video flex flex-col items-center justify-center group cursor-pointer">
+                    <div class="w-16 h-16 rounded-full bg-brand-magenta/80 flex items-center justify-center group-hover:bg-brand-magenta transition-colors">
+                        <svg class="w-7 h-7 text-white translate-x-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg>
+                    </div>
+                    <p class="text-xs font-bold tracking-widest uppercase text-white/60 mt-3">2:00 – 2:30</p>
+                </div>
+                <div class="p-6">
+                    <span class="text-xs font-bold bg-brand-magenta/10 text-brand-magenta px-3 py-1 rounded-full">Lead Quality</span>
+                    <h3 class="font-bold text-heading text-lg mt-3 mb-2">"What If the Leads Aren't Qualified?"</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">You control targeting. Our inbox team qualifies every lead. You only talk to real prospects who match your ICP.</p>
+                    <div class="mt-4 pt-4 border-t border-gray-100">
+                        <a href="#" class="btn-primary text-sm py-2.5 px-5">Complete Your Prep Form</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video 8 -->
+            <div class="video-card">
+                <div class="video-placeholder aspect-video flex flex-col items-center justify-center group cursor-pointer">
+                    <div class="w-16 h-16 rounded-full bg-brand-magenta/80 flex items-center justify-center group-hover:bg-brand-magenta transition-colors">
+                        <svg class="w-7 h-7 text-white translate-x-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg>
+                    </div>
+                    <p class="text-xs font-bold tracking-widest uppercase text-white/60 mt-3">2:30 – 3:00</p>
+                </div>
+                <div class="p-6">
+                    <span class="text-xs font-bold bg-brand-magenta/10 text-brand-magenta px-3 py-1 rounded-full">Prep</span>
+                    <h3 class="font-bold text-heading text-lg mt-3 mb-2">Call Prep Checklist</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Know your numbers. Bring the decision maker. Have your questions ready. Here's exactly what to expect on the call.</p>
+                    <div class="mt-4 pt-4 border-t border-gray-100">
+                        <a href="#" class="btn-primary text-sm py-2.5 px-5">Complete Your Prep Form</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- WHO THIS IS FOR / NOT FOR -->
+<section class="py-20 md:py-28 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <span class="section-pill mb-4">Qualification</span>
+            <h2 class="font-section text-heading font-medium text-3xl md:text-4xl mt-6">Who This Call Is For — and Who Should Reschedule</h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- FOR -->
+            <div class="bg-green-50 border border-green-200 rounded-2xl p-8">
+                <h3 class="font-bold text-green-800 text-lg mb-6 flex items-center gap-2">
+                    <svg class="w-6 h-6 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                    This call is for you if:
+                </h3>
+                <div class="space-y-4">
+                    <div class="flex items-start gap-3">
+                        <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                        <p class="text-sm text-green-900"><span class="font-semibold">You run a B2B company.</span> You sell a product or service to other businesses.</p>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                        <p class="text-sm text-green-900"><span class="font-semibold">You're doing $500K–$10M/year.</span> You can afford a retainer but don't have an in-house SDR team.</p>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                        <p class="text-sm text-green-900"><span class="font-semibold">You're the decision maker AND budget holder.</span> Same person. No "run it by" meetings.</p>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                        <p class="text-sm text-green-900"><span class="font-semibold">You need predictable pipeline within 30 days.</span> Not a nice-to-have. A real business need.</p>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                        <p class="text-sm text-green-900"><span class="font-semibold">You want outbound as your primary growth channel.</span> Referrals and content aren't cutting it.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NOT FOR -->
+            <div class="bg-red-50 border border-red-200 rounded-2xl p-8">
+                <h3 class="font-bold text-red-800 text-lg mb-6 flex items-center gap-2">
+                    <svg class="w-6 h-6 text-red-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    This call is NOT for you if:
+                </h3>
+                <div class="space-y-4">
+                    <div class="flex items-start gap-3">
+                        <svg class="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        <p class="text-sm text-red-900"><span class="font-semibold">You sell to consumers or run e-commerce.</span> LinkedIn InMail is a B2B channel.</p>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <svg class="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        <p class="text-sm text-red-900"><span class="font-semibold">You're pre-revenue or under $500K/year.</span> The retainer will stretch your budget too thin.</p>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <svg class="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        <p class="text-sm text-red-900"><span class="font-semibold">You're not the final decision maker.</span> Add them to the invite or reschedule.</p>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <svg class="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        <p class="text-sm text-red-900"><span class="font-semibold">You're "just exploring" with no timeline.</span> We launch in 48 hours. Let's talk when you're ready.</p>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <svg class="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        <p class="text-sm text-red-900"><span class="font-semibold">You can't handle 20+ meetings/month.</span> Fix capacity first.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p class="text-center text-gray-500 text-sm mt-8">If any of the "not for you" criteria apply, please <a href="#" class="text-brand-magenta hover:underline">reschedule</a>. This call won't be the right fit, and we'd rather save both of our time.</p>
+    </div>
+</section>
+
+<!-- HOW THE SYSTEM WORKS -->
+<section class="dark-section py-20 md:py-28 relative">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="text-center mb-16">
+            <span class="section-pill mb-4">The Mechanism</span>
+            <h2 class="font-section text-white font-medium text-3xl md:text-4xl mt-6">How We Put 20+ Qualified Meetings on Your Calendar Every Month</h2>
+        </div>
+
+        <div class="space-y-8">
+            <!-- Step 1 -->
+            <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8">
+                <div class="flex items-center gap-4 mb-4">
+                    <div class="w-10 h-10 bg-brand-magenta rounded-full flex items-center justify-center flex-shrink-0">
+                        <span class="text-white font-bold">1</span>
+                    </div>
+                    <h3 class="text-white font-bold text-xl">Build Your Outbound Infrastructure</h3>
+                </div>
+                <p class="text-gray-300 leading-relaxed mb-4">We create a dedicated LinkedIn profile for your campaigns. US-based. ID-verified. Branded to your company. Then we build hyper-targeted prospect lists — filtered by job title, seniority, industry, company size, geography, and intent signals.</p>
+                <div class="bg-white/5 rounded-xl p-4">
+                    <p class="text-brand-magenta font-semibold text-sm">KPI: CourseClout hit a 31.7% interested reply rate on a cold campaign. That's what precision targeting produces.</p>
+                    <p class="text-gray-500 text-xs mt-1 italic">Results vary based on industry, offer, and ICP specificity.</p>
+                </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8">
+                <div class="flex items-center gap-4 mb-4">
+                    <div class="w-10 h-10 bg-brand-magenta rounded-full flex items-center justify-center flex-shrink-0">
+                        <span class="text-white font-bold">2</span>
+                    </div>
+                    <h3 class="text-white font-bold text-xl">Send 5,000–10,000 InMails Per Month</h3>
+                </div>
+                <p class="text-gray-300 leading-relaxed mb-4">Our proprietary software bypasses LinkedIn's standard 300–400 message cap. We send 5,000–10,000 InMails per month — 10–25x the volume anyone else can send. All messaging written in-house. Tested and iterated weekly.</p>
+                <div class="bg-white/5 rounded-xl p-4">
+                    <p class="text-brand-magenta font-semibold text-sm">KPI: Zero account bans across every account we've ever managed. That's not luck — that's how the infrastructure was designed.</p>
+                </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8">
+                <div class="flex items-center gap-4 mb-4">
+                    <div class="w-10 h-10 bg-brand-magenta rounded-full flex items-center justify-center flex-shrink-0">
+                        <span class="text-white font-bold">3</span>
+                    </div>
+                    <h3 class="text-white font-bold text-xl">Manage Every Reply and Book Your Calls</h3>
+                </div>
+                <p class="text-gray-300 leading-relaxed mb-4">Trained inbox managers handle every response. They classify intent, respond in your company's voice, handle objections, qualify leads, and book meetings directly into your calendar. You show up. That's it.</p>
+                <div class="bg-white/5 rounded-xl p-4">
+                    <p class="text-brand-magenta font-semibold text-sm">KPI: 20 qualified meetings per month — guaranteed. If we don't hit it, we work for free until we do. It's in the contract.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mini Proof -->
+        <div class="mt-12 bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 text-center">
+            <p class="text-gray-300 leading-relaxed">Zad at Leadfin was doing $120K/year running manual Dream 100 outreach. Within the first 7 days of launching his LinkedIn campaign, we generated <span class="text-white font-bold">15 qualified calls</span> — and he closed a single <span class="text-white font-bold">$60,000 deal</span>. He's now on pace for <span class="text-white font-bold">$300K–$400K annually</span>.</p>
+            <p class="text-gray-500 text-xs mt-3 italic">Results vary based on individual effort, experience, and market conditions.</p>
+        </div>
+    </div>
+</section>
+
+<!-- OBJECTION HANDLING -->
+<section class="py-20 md:py-28 bg-page">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <span class="section-pill mb-4">Common Concerns</span>
+            <h2 class="font-section text-heading font-medium text-3xl md:text-4xl mt-6">Questions You're Probably Thinking Right Now</h2>
+        </div>
+
+        <div class="space-y-8">
+            <!-- Q1 -->
+            <div class="bg-white rounded-2xl border border-gray-200 p-8">
+                <h3 class="font-bold text-heading text-lg mb-4">"Won't my LinkedIn account get banned?"</h3>
+                <p class="text-gray-600 leading-relaxed mb-4">We don't use your account. We build a completely separate, dedicated LinkedIn profile — US-based, ID-verified. Your personal LinkedIn is never at risk. We built our own software from the ground up. Across every single account we've ever managed: <span class="font-bold text-heading">zero bans. Zero flags. Zero issues.</span></p>
+                <div class="bg-card rounded-xl p-4 flex items-start gap-4">
+                    <img src="images/case-study-smartlead-banner.png" alt="SmartLead Case Study" class="w-24 h-16 object-cover rounded-lg flex-shrink-0">
+                    <p class="text-sm text-gray-600"><span class="font-semibold">Proof:</span> SmartLead published a case study on our results — we didn't ask them to. 40,000 leads contacted. 700+ qualified leads generated. All from dedicated profiles running our proprietary infrastructure.</p>
+                </div>
+            </div>
+
+            <!-- Q2 -->
+            <div class="bg-white rounded-2xl border border-gray-200 p-8">
+                <h3 class="font-bold text-heading text-lg mb-4">"We've been burned by agencies before. How is this different?"</h3>
+                <p class="text-gray-600 leading-relaxed mb-4">20 qualified meetings per month. Or we work for free until we hit that number. It's in the contract. Month to month. No 6-month lock-in. Full transparency — you see the prospect lists, messaging, and reply data in real time.</p>
+                <div class="bg-card rounded-xl p-4">
+                    <p class="text-sm text-gray-600"><span class="font-semibold">Proof:</span> We've worked with companies backed by Y Combinator, Morgan Stanley, and Thiel's portfolio companies. SmartLead published a case study about our results without us even asking — 700+ qualified leads generated in two months. <span class="italic">Results vary.</span></p>
+                </div>
+            </div>
+
+            <!-- Q3 -->
+            <div class="bg-white rounded-2xl border border-gray-200 p-8">
+                <h3 class="font-bold text-heading text-lg mb-4">"What if the leads aren't actually qualified?"</h3>
+                <p class="text-gray-600 leading-relaxed mb-4">The guarantee is 20 QUALIFIED meetings — not 20 warm bodies. You approve targeting before launch. Our inbox team classifies intent, qualifies leads against your ICP criteria, and only books calls with prospects who've expressed genuine interest.</p>
+                <div class="bg-card rounded-xl p-4">
+                    <p class="text-sm text-gray-600"><span class="font-semibold">Proof:</span> Chris at Dominate Marketing had 6 qualified calls booked in 8 days with $30K in active pipeline — from prospects who'd never heard of him before. "That's better than I've done with any other channel." <span class="italic">Results vary.</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TESTIMONIAL GALLERY -->
+<section class="py-20 md:py-28 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <span class="section-pill mb-4">Results</span>
+            <h2 class="font-section text-heading font-medium text-3xl md:text-4xl mt-6 mb-4">What Clients Say After Working With Us</h2>
+            <p class="text-gray-500 max-w-2xl mx-auto">Real clients. Real quotes. Real results.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+            <div class="bg-page p-6 rounded-2xl border border-gray-100 relative">
+                <div class="absolute -top-3 -left-3 w-8 h-8 bg-brand-magenta rounded-full flex items-center justify-center text-white text-lg font-serif">&ldquo;</div>
+                <p class="text-gray-700 italic text-sm leading-relaxed mb-4">"Within a week, I had 15 qualified calls and closed a $60K deal. I wasn't expecting anything that fast. You guys delivered."</p>
+                <p class="text-xs font-bold text-heading">— Zad, Founder, Leadfin</p>
+            </div>
+            <div class="bg-page p-6 rounded-2xl border border-gray-100 relative">
+                <div class="absolute -top-3 -left-3 w-8 h-8 bg-brand-magenta rounded-full flex items-center justify-center text-white text-lg font-serif">&ldquo;</div>
+                <p class="text-gray-700 italic text-sm leading-relaxed mb-4">"That's better than I've done with any other channel. For a bootstrap situation, it's the best I've ever seen."</p>
+                <p class="text-xs font-bold text-heading">— Chris, Founder, Dominate Marketing</p>
+            </div>
+            <div class="bg-page p-6 rounded-2xl border border-gray-100 relative">
+                <div class="absolute -top-3 -left-3 w-8 h-8 bg-brand-magenta rounded-full flex items-center justify-center text-white text-lg font-serif">&ldquo;</div>
+                <p class="text-gray-700 italic text-sm leading-relaxed mb-4">"I've honestly contemplated turning it off because I've lost control of my inbox. It's phone call after phone call. I'm booked solid all day."</p>
+                <p class="text-xs font-bold text-heading">— James, Founder, The Barbell Box</p>
+            </div>
+            <div class="bg-page p-6 rounded-2xl border border-gray-100 relative">
+                <div class="absolute -top-3 -left-3 w-8 h-8 bg-brand-magenta rounded-full flex items-center justify-center text-white text-lg font-serif">&ldquo;</div>
+                <p class="text-gray-700 italic text-sm leading-relaxed mb-4">"They were able to see my exact situation and give me a blueprint on exactly how I should go about getting leads. I secured my first client for $13,000."</p>
+                <p class="text-xs font-bold text-heading">— Founder, NexaFlair</p>
+            </div>
+            <div class="bg-page p-6 rounded-2xl border border-gray-100 relative">
+                <div class="absolute -top-3 -left-3 w-8 h-8 bg-brand-magenta rounded-full flex items-center justify-center text-white text-lg font-serif">&ldquo;</div>
+                <p class="text-gray-700 italic text-sm leading-relaxed mb-4">"Those guys are serious about it. They communicate every day with you. There's a whole system behind it — very well structured."</p>
+                <p class="text-xs font-bold text-heading">— Zad, Leadfin</p>
+            </div>
+            <div class="bg-page p-6 rounded-2xl border border-gray-100 relative">
+                <div class="absolute -top-3 -left-3 w-8 h-8 bg-brand-magenta rounded-full flex items-center justify-center text-white text-lg font-serif">&ldquo;</div>
+                <p class="text-gray-700 italic text-sm leading-relaxed mb-4">"I didn't have to do anything on my side. The calls were booked. The leads were qualified. It was pretty hands-off."</p>
+                <p class="text-xs font-bold text-heading">— Zad, Leadfin</p>
+            </div>
+            <div class="bg-page p-6 rounded-2xl border border-gray-100 relative">
+                <div class="absolute -top-3 -left-3 w-8 h-8 bg-brand-magenta rounded-full flex items-center justify-center text-white text-lg font-serif">&ldquo;</div>
+                <p class="text-gray-700 italic text-sm leading-relaxed mb-4">"Results almost instantly. Better response rates than cold email ever got me."</p>
+                <p class="text-xs font-bold text-heading">— Chris, Dominate Marketing</p>
+            </div>
+            <div class="bg-page p-6 rounded-2xl border border-gray-100 relative">
+                <div class="absolute -top-3 -left-3 w-8 h-8 bg-brand-magenta rounded-full flex items-center justify-center text-white text-lg font-serif">&ldquo;</div>
+                <p class="text-gray-700 italic text-sm leading-relaxed mb-4">"We've been burned by agencies before but the guarantee made it a no-brainer."</p>
+                <p class="text-xs font-bold text-heading">— B2B Founder, $1.5M ARR</p>
+            </div>
+            <div class="bg-page p-6 rounded-2xl border border-gray-100 relative">
+                <div class="absolute -top-3 -left-3 w-8 h-8 bg-brand-magenta rounded-full flex items-center justify-center text-white text-lg font-serif">&ldquo;</div>
+                <p class="text-gray-700 italic text-sm leading-relaxed mb-4">"20 meetings or you work for free — that's the only guarantee I've seen in this space."</p>
+                <p class="text-xs font-bold text-heading">— Recruiting Agency, $1M ARR</p>
+            </div>
+            <div class="bg-page p-6 rounded-2xl border border-gray-100 relative">
+                <div class="absolute -top-3 -left-3 w-8 h-8 bg-brand-magenta rounded-full flex items-center justify-center text-white text-lg font-serif">&ldquo;</div>
+                <p class="text-gray-700 italic text-sm leading-relaxed mb-4">"This gives us the output of a full outbound team at a fraction of the cost."</p>
+                <p class="text-xs font-bold text-heading">— B2B Agency, $700K ARR</p>
+            </div>
+            <div class="bg-page p-6 rounded-2xl border border-gray-100 relative">
+                <div class="absolute -top-3 -left-3 w-8 h-8 bg-brand-magenta rounded-full flex items-center justify-center text-white text-lg font-serif">&ldquo;</div>
+                <p class="text-gray-700 italic text-sm leading-relaxed mb-4">"The fact that you manage the inbox and book the calls is the part that sold me. I just show up."</p>
+                <p class="text-xs font-bold text-heading">— B2B SaaS, $3M ARR</p>
+            </div>
+            <div class="bg-page p-6 rounded-2xl border border-gray-100 relative">
+                <div class="absolute -top-3 -left-3 w-8 h-8 bg-brand-magenta rounded-full flex items-center justify-center text-white text-lg font-serif">&ldquo;</div>
+                <p class="text-gray-700 italic text-sm leading-relaxed mb-4">"Models like yours where you feel like the agency has some skin in the game is why I responded."</p>
+                <p class="text-xs font-bold text-heading">— Bobby, Agency Founder</p>
+            </div>
+            <div class="bg-page p-6 rounded-2xl border border-gray-100 relative">
+                <div class="absolute -top-3 -left-3 w-8 h-8 bg-brand-magenta rounded-full flex items-center justify-center text-white text-lg font-serif">&ldquo;</div>
+                <p class="text-gray-700 italic text-sm leading-relaxed mb-4">"This has been something that's been so painful for the growth of this business. It's been the thing holding us back. These guys are the real deal."</p>
+                <p class="text-xs font-bold text-heading">— James, The Barbell Box</p>
+            </div>
+            <div class="bg-page p-6 rounded-2xl border border-gray-100 relative">
+                <div class="absolute -top-3 -left-3 w-8 h-8 bg-brand-magenta rounded-full flex items-center justify-center text-white text-lg font-serif">&ldquo;</div>
+                <p class="text-gray-700 italic text-sm leading-relaxed mb-4">"If it works then you have a client for life. We never going to turn."</p>
+                <p class="text-xs font-bold text-heading">— Giorgi, B2B Founder</p>
+            </div>
+            <div class="bg-page p-6 rounded-2xl border border-gray-100 relative">
+                <div class="absolute -top-3 -left-3 w-8 h-8 bg-brand-magenta rounded-full flex items-center justify-center text-white text-lg font-serif">&ldquo;</div>
+                <p class="text-gray-700 italic text-sm leading-relaxed mb-4">"We tried LinkedIn automation before and got banned. Knowing you've never had a ban was the thing that gave me confidence."</p>
+                <p class="text-xs font-bold text-heading">— B2B Services Founder</p>
+            </div>
+        </div>
+
+        <!-- Proof Screenshots -->
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden">
+                <img src="images/case-study-email-reach-stats.png" alt="Campaign Analytics" class="w-full">
+                <div class="p-4">
+                    <p class="text-xs text-gray-500">4,919 leads contacted. 89 unique replies. 12.36% positive reply rate. Single account, one month.</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden">
+                <img src="images/case-study-smartlead-dashboard.png" alt="SmartLead Dashboard" class="w-full">
+                <div class="p-4">
+                    <p class="text-xs text-gray-500">3,012 leads contacted. 159 unique replies. 75 unique positive replies (47.17% positive rate).</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden">
+                <img src="images/case-study-smartlead-banner.png" alt="SmartLead Case Study" class="w-full">
+                <div class="p-4">
+                    <p class="text-xs text-gray-500">SmartLead published this case study about 129 Scaled. 700+ qualified leads. 40,000 prospects contacted.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PHONE NUMBER + LOGISTICS -->
+<section class="py-20 md:py-28 bg-alt">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Phone Number -->
+        <div class="text-center mb-16">
+            <span class="section-pill mb-4">Contact</span>
+            <h2 class="font-section text-heading font-medium text-2xl md:text-3xl mt-6 mb-4">Save This Number</h2>
+            <p class="text-gray-600 mb-4">You'll receive a text from our team at <span class="font-bold text-heading text-xl">+44 7490 885410</span> before your call.</p>
+            <p class="text-gray-500 text-sm">Save this number so you know it's us when we reach out. If you need to reach us directly, text or call.</p>
+        </div>
+
+        <!-- Logistics -->
+        <div class="space-y-6">
+            <div class="text-center mb-8">
+                <span class="section-pill mb-4">Before the Call</span>
+                <h2 class="font-section text-heading font-medium text-2xl md:text-3xl mt-6">What to Bring and What to Expect</h2>
+            </div>
+
+            <div class="bg-white rounded-2xl border border-gray-200 p-8">
+                <h3 class="font-bold text-heading mb-4">What to Bring</h3>
+                <div class="space-y-3">
+                    <div class="flex items-start gap-3">
+                        <div class="w-6 h-6 bg-brand-magenta/10 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                            <svg class="w-3.5 h-3.5 text-brand-magenta" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                        </div>
+                        <p class="text-sm text-gray-600"><span class="font-semibold text-heading">Your numbers:</span> Current monthly revenue, average deal size, close rate on qualified calls, and how much you're spending on lead gen right now.</p>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <div class="w-6 h-6 bg-brand-magenta/10 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                            <svg class="w-3.5 h-3.5 text-brand-magenta" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                        </div>
+                        <p class="text-sm text-gray-600"><span class="font-semibold text-heading">Your targeting criteria:</span> Industry, title, company size, geography. The more specific you are, the more specific Kariem can be.</p>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <div class="w-6 h-6 bg-brand-magenta/10 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                            <svg class="w-3.5 h-3.5 text-brand-magenta" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                        </div>
+                        <p class="text-sm text-gray-600"><span class="font-semibold text-heading">Your questions:</span> Anything specific to your business, industry, or sales process.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl border border-gray-200 p-8">
+                <h3 class="font-bold text-heading mb-4">Who Must Attend</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">The person who signs off on a $4,000/month investment must be on the call. If that's not you — add them to the calendar invite or <a href="#" class="text-brand-magenta hover:underline">reschedule for a time when they can join</a>. We don't present twice.</p>
+            </div>
+
+            <div class="bg-white rounded-2xl border border-gray-200 p-8">
+                <h3 class="font-bold text-heading mb-4">What the Call Looks Like</h3>
+                <div class="space-y-3">
+                    <div class="flex items-center gap-4 p-3 bg-card rounded-xl">
+                        <span class="text-brand-magenta font-bold text-sm w-16 flex-shrink-0">5 min</span>
+                        <p class="text-sm text-gray-700"><span class="font-semibold">Your business</span> — What you sell, who you sell it to, how you're generating pipeline now.</p>
+                    </div>
+                    <div class="flex items-center gap-4 p-3 bg-card rounded-xl">
+                        <span class="text-brand-magenta font-bold text-sm w-16 flex-shrink-0">10 min</span>
+                        <p class="text-sm text-gray-700"><span class="font-semibold">The system</span> — Kariem shares his screen with live campaign data. Real numbers.</p>
+                    </div>
+                    <div class="flex items-center gap-4 p-3 bg-card rounded-xl">
+                        <span class="text-brand-magenta font-bold text-sm w-16 flex-shrink-0">10 min</span>
+                        <p class="text-sm text-gray-700"><span class="font-semibold">Your ROI math</span> — We run the numbers for your deal size, close rate, and cost-per-meeting.</p>
+                    </div>
+                    <div class="flex items-center gap-4 p-3 bg-card rounded-xl">
+                        <span class="text-brand-magenta font-bold text-sm w-16 flex-shrink-0">5 min</span>
+                        <p class="text-sm text-gray-700"><span class="font-semibold">Next steps</span> — If it makes sense, Kariem walks through onboarding. If not, he'll tell you.</p>
+                    </div>
+                </div>
+                <p class="text-gray-500 text-xs mt-4">Total time: 30 minutes. Stable internet, quiet environment, screen-share capability (Zoom link in your calendar invite).</p>
+            </div>
+
+            <div class="bg-white rounded-2xl border border-gray-200 p-8">
+                <h3 class="font-bold text-heading mb-3">Reschedule Policy</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">If you need to reschedule, do it at least 24 hours in advance using the reschedule link on this page or in your confirmation email. Calls that start more than 10 minutes late will be rescheduled automatically.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="dark-section glow-bottom py-20 md:py-28 relative">
+    <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+        <h2 class="font-section text-white font-medium text-3xl md:text-4xl mb-4">Complete Your Prep Form Now</h2>
+        <p class="text-gray-400 mb-10 text-lg">Takes 5 minutes. Kariem uses your answers to pull real campaign data for your specific market before the call.</p>
+        <a href="#" class="btn-primary text-lg py-4 px-10 shadow-lg shadow-brand-magenta/20">Complete Your Prep Form <span>&rsaquo;</span></a>
+        <p class="text-gray-400 text-sm mt-6">Need to reschedule? <a href="#" class="text-brand-magenta hover:underline">Click here.</a> No hard feelings.</p>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="dark-section glow-bottom py-16 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+            <div>
+                <span class="font-heading font-bold text-xl text-white tracking-tight">129 SCALED</span>
+                <p class="text-gray-400 text-sm mt-2 max-w-md">Done-for-you LinkedIn outbound lead generation at scale. 5,000–10,000 InMails per month. 20 qualified meetings guaranteed.</p>
+            </div>
+            <div class="flex flex-col items-center md:items-end gap-3">
+                <a href="mailto:Kariem@129scaled.com" class="text-gray-400 hover:text-white transition-colors text-sm">Kariem@129scaled.com</a>
+                <div class="flex items-center gap-4">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">LinkedIn</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">Instagram</a>
+                </div>
+                <div class="flex items-center gap-4 text-xs text-gray-500">
+                    <a href="#" class="hover:text-gray-300 transition-colors">Terms of Service</a>
+                    <a href="#" class="hover:text-gray-300 transition-colors">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 mt-8 pt-6 text-center">
+            <p class="text-gray-500 text-xs">&copy; 2026 129 Scaled. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

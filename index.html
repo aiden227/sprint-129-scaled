@@ -1,0 +1,1427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>129 Scaled — 20 Qualified Sales Calls/Month or We Work for Free</title>
+    <meta name="description"
+        content="Done-for-you LinkedIn outbound at 10–25x the volume anyone else can send. 20 qualified meetings per month guaranteed.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Onest:wght@700&family=Poppins:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --magenta: #DD02F5;
+            --navy: #02070F;
+            --slate-dark: #0F172A;
+            --page-bg: #F6F7FB;
+            --card-bg: #F1F2F9;
+            --alt-bg: #EBEDF7;
+            --heading: #1F2224;
+            --blue-accent: #0066FF;
+            --periwinkle: #5972CC;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--page-bg);
+            color: #000;
+        }
+
+        .font-heading {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .font-section {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .font-badge {
+            font-family: 'Onest', sans-serif;
+        }
+
+        .bg-brand-magenta {
+            background-color: var(--magenta);
+        }
+
+        .text-brand-magenta {
+            color: var(--magenta);
+        }
+
+        .border-brand-magenta {
+            border-color: var(--magenta);
+        }
+
+        .bg-brand-navy {
+            background-color: var(--navy);
+        }
+
+        .text-brand-navy {
+            color: var(--navy);
+        }
+
+        .bg-brand-slate {
+            background-color: var(--slate-dark);
+        }
+
+        .bg-page {
+            background-color: var(--page-bg);
+        }
+
+        .bg-card {
+            background-color: var(--card-bg);
+        }
+
+        .bg-alt {
+            background-color: var(--alt-bg);
+        }
+
+        .text-heading {
+            color: var(--heading);
+        }
+
+        .btn-primary {
+            background: var(--magenta);
+            color: #fff;
+            border-radius: 9999px;
+            padding: 14px 28px;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-primary:hover {
+            filter: brightness(110%);
+            transform: translateY(-1px);
+        }
+
+        .btn-secondary {
+            background: var(--slate-dark);
+            color: #fff;
+            border-radius: 9999px;
+            padding: 14px 28px;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-secondary:hover {
+            filter: brightness(130%);
+            transform: translateY(-1px);
+        }
+
+        .section-pill {
+            display: inline-block;
+            background: #fff;
+            color: var(--magenta);
+            font-family: 'Onest', sans-serif;
+            font-weight: 700;
+            font-size: 14px;
+            padding: 8px 20px;
+            border-radius: 9999px;
+            border: 1px solid #E5E6ED;
+            text-transform: uppercase;
+        }
+
+        .dark-section {
+            background: var(--navy);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .dark-section::before {
+            content: '';
+            position: absolute;
+            top: -10%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            height: 60%;
+            background: radial-gradient(50% 50% at 50% 0%, var(--magenta) 0%, transparent 70%);
+            opacity: 0.15;
+            pointer-events: none;
+        }
+
+        .glow-bottom::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            height: 40%;
+            background: radial-gradient(50% 50% at 50% 100%, var(--magenta) 0%, transparent 70%);
+            opacity: 0.1;
+            pointer-events: none;
+        }
+
+        .video-placeholder {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            border: 1px solid rgba(221, 2, 245, 0.2);
+        }
+
+        .step-content {
+            display: none;
+        }
+
+        .step-content.active {
+            display: block;
+            animation: slideUp 0.4s ease-out;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+
+        .faq-answer.open {
+            max-height: 500px;
+        }
+
+        .proof-card {
+            background: #fff;
+            border: 1px solid #E5E6ED;
+            border-radius: 18px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .proof-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+        }
+
+        .logo-bar img {
+            filter: grayscale(100%);
+            opacity: 0.6;
+            transition: all 0.3s ease;
+        }
+
+        .logo-bar img:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .logo-scroll {
+            display: flex;
+            width: max-content;
+            animation: scroll 40s linear infinite;
+        }
+
+        .logo-set {
+            display: flex;
+            align-items: center;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- HERO SECTION -->
+    <section class="dark-section py-16 md:py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <!-- Call Out -->
+            <p class="text-center text-brand-magenta font-semibold text-sm md:text-base mb-4 tracking-wide uppercase">
+                Attention B2B Founders and Revenue Leaders Doing $500K–$10M/Year</p>
+
+            <!-- Headline -->
+            <h1
+                class="font-heading text-center text-white font-bold text-3xl md:text-5xl lg:text-6xl leading-tight mb-6 max-w-4xl mx-auto">
+                20 Qualified Sales Calls on Your Calendar Every Month<br> <span class="text-brand-magenta">or We Work
+                    for
+                    Free</span>
+            </h1>
+
+            <!-- Sub-headline -->
+            <p class="text-center text-gray-300 text-lg md:text-xl max-w-3xl mx-auto mb-12">
+                Done-for-you LinkedIn outbound at 10–25x the volume anyone else can send. You stop doing outreach. You
+                start doing sales.
+            </p>
+
+            <div class="max-w-3xl mx-auto">
+                <!-- VSL Placeholder -->
+                <div
+                    class="video-placeholder aspect-video rounded-2xl shadow-2xl flex flex-col items-center justify-center group cursor-pointer relative mb-10">
+                    <div
+                        class="w-20 h-20 rounded-full bg-brand-magenta/80 flex items-center justify-center mb-4 group-hover:bg-brand-magenta transition-colors">
+                        <svg class="w-8 h-8 text-white translate-x-0.5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M8 5v14l11-7z"></path>
+                        </svg>
+                    </div>
+                    <p class="text-sm font-bold tracking-widest uppercase text-white/70">How We Book 20–35 Qualified
+                        Calls/Month</p>
+                    <p class="text-xs text-white/40 mt-1">Watch Kariem's VSL</p>
+                </div>
+
+                <!-- MULTI-STEP FORM -->
+                <div id="qualify" class="bg-white rounded-2xl p-6 md:p-8 shadow-xl max-w-lg mx-auto">
+                    <h3 class="font-section font-semibold text-heading text-xl mb-1 text-center">See If You Qualify</h3>
+                    <p class="text-gray-500 text-sm mb-5 text-center">Takes 60 seconds. We'll tell you if this is a fit.
+                    </p>
+
+                    <!-- Progress -->
+                    <div class="flex justify-between text-xs font-bold text-heading uppercase tracking-widest mb-2">
+                        <span>Qualification</span>
+                        <span id="step-indicator">Step 1 of 5</span>
+                    </div>
+                    <div class="w-full h-1 bg-gray-100 rounded-full mb-6">
+                        <div id="progress-bar" class="h-full bg-brand-magenta rounded-full transition-all duration-500"
+                            style="width: 20%"></div>
+                    </div>
+
+                    <form id="multi-step-form">
+                        <!-- Step 1 -->
+                        <div id="step-1" class="step-content active">
+                            <p class="font-semibold text-heading mb-4">What best describes your business?</p>
+                            <div class="space-y-3">
+                                <button type="button" onclick="goToStep(2)"
+                                    class="w-full text-left p-4 rounded-xl border-2 border-gray-100 hover:border-brand-magenta hover:bg-purple-50 transition-all flex justify-between items-center group">
+                                    <span class="font-medium">B2B SaaS</span>
+                                    <svg class="w-5 h-5 text-gray-300 group-hover:text-brand-magenta transition-colors"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </button>
+                                <button type="button" onclick="goToStep(2)"
+                                    class="w-full text-left p-4 rounded-xl border-2 border-gray-100 hover:border-brand-magenta hover:bg-purple-50 transition-all flex justify-between items-center group">
+                                    <span class="font-medium">B2B Agency / Consultancy</span>
+                                    <svg class="w-5 h-5 text-gray-300 group-hover:text-brand-magenta transition-colors"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </button>
+                                <button type="button" onclick="goToStep(2)"
+                                    class="w-full text-left p-4 rounded-xl border-2 border-gray-100 hover:border-brand-magenta hover:bg-purple-50 transition-all flex justify-between items-center group">
+                                    <span class="font-medium">Professional Services</span>
+                                    <svg class="w-5 h-5 text-gray-300 group-hover:text-brand-magenta transition-colors"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </button>
+                                <button type="button" onclick="goToStep(2)"
+                                    class="w-full text-left p-4 rounded-xl border-2 border-gray-100 hover:border-brand-magenta hover:bg-purple-50 transition-all flex justify-between items-center group">
+                                    <span class="font-medium">Staffing / Recruiting</span>
+                                    <svg class="w-5 h-5 text-gray-300 group-hover:text-brand-magenta transition-colors"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </button>
+                                <button type="button" onclick="goToStep(2)"
+                                    class="w-full text-left p-4 rounded-xl border-2 border-gray-100 hover:border-brand-magenta hover:bg-purple-50 transition-all flex justify-between items-center group">
+                                    <span class="font-medium">Other</span>
+                                    <svg class="w-5 h-5 text-gray-300 group-hover:text-brand-magenta transition-colors"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div id="step-2" class="step-content">
+                            <p class="font-semibold text-heading mb-4">What is your current annual revenue?</p>
+                            <div class="space-y-3">
+                                <button type="button" onclick="goToStep(3)"
+                                    class="w-full text-left p-4 rounded-xl border-2 border-gray-100 hover:border-brand-magenta hover:bg-purple-50 transition-all flex justify-between items-center group">
+                                    <span class="font-medium">Under $500K</span>
+                                    <svg class="w-5 h-5 text-gray-300 group-hover:text-brand-magenta transition-colors"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </button>
+                                <button type="button" onclick="goToStep(3)"
+                                    class="w-full text-left p-4 rounded-xl border-2 border-gray-100 hover:border-brand-magenta hover:bg-purple-50 transition-all flex justify-between items-center group">
+                                    <span class="font-medium">$500K – $1M</span>
+                                    <svg class="w-5 h-5 text-gray-300 group-hover:text-brand-magenta transition-colors"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </button>
+                                <button type="button" onclick="goToStep(3)"
+                                    class="w-full text-left p-4 rounded-xl border-2 border-gray-100 hover:border-brand-magenta hover:bg-purple-50 transition-all flex justify-between items-center group">
+                                    <span class="font-medium">$1M – $5M</span>
+                                    <svg class="w-5 h-5 text-gray-300 group-hover:text-brand-magenta transition-colors"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </button>
+                                <button type="button" onclick="goToStep(3)"
+                                    class="w-full text-left p-4 rounded-xl border-2 border-gray-100 hover:border-brand-magenta hover:bg-purple-50 transition-all flex justify-between items-center group">
+                                    <span class="font-medium">$5M – $10M</span>
+                                    <svg class="w-5 h-5 text-gray-300 group-hover:text-brand-magenta transition-colors"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </button>
+                                <button type="button" onclick="goToStep(3)"
+                                    class="w-full text-left p-4 rounded-xl border-2 border-gray-100 hover:border-brand-magenta hover:bg-purple-50 transition-all flex justify-between items-center group">
+                                    <span class="font-medium">$10M+</span>
+                                    <svg class="w-5 h-5 text-gray-300 group-hover:text-brand-magenta transition-colors"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div id="step-3" class="step-content">
+                            <p class="font-semibold text-heading mb-4">How are you currently generating pipeline?</p>
+                            <div class="space-y-3">
+                                <button type="button" onclick="goToStep(4)"
+                                    class="w-full text-left p-4 rounded-xl border-2 border-gray-100 hover:border-brand-magenta hover:bg-purple-50 transition-all flex justify-between items-center group">
+                                    <span class="font-medium">Referrals / word of mouth</span>
+                                    <svg class="w-5 h-5 text-gray-300 group-hover:text-brand-magenta transition-colors"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </button>
+                                <button type="button" onclick="goToStep(4)"
+                                    class="w-full text-left p-4 rounded-xl border-2 border-gray-100 hover:border-brand-magenta hover:bg-purple-50 transition-all flex justify-between items-center group">
+                                    <span class="font-medium">Cold email</span>
+                                    <svg class="w-5 h-5 text-gray-300 group-hover:text-brand-magenta transition-colors"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </button>
+                                <button type="button" onclick="goToStep(4)"
+                                    class="w-full text-left p-4 rounded-xl border-2 border-gray-100 hover:border-brand-magenta hover:bg-purple-50 transition-all flex justify-between items-center group">
+                                    <span class="font-medium">LinkedIn outreach</span>
+                                    <svg class="w-5 h-5 text-gray-300 group-hover:text-brand-magenta transition-colors"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </button>
+                                <button type="button" onclick="goToStep(4)"
+                                    class="w-full text-left p-4 rounded-xl border-2 border-gray-100 hover:border-brand-magenta hover:bg-purple-50 transition-all flex justify-between items-center group">
+                                    <span class="font-medium">Paid ads</span>
+                                    <svg class="w-5 h-5 text-gray-300 group-hover:text-brand-magenta transition-colors"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </button>
+                                <button type="button" onclick="goToStep(4)"
+                                    class="w-full text-left p-4 rounded-xl border-2 border-gray-100 hover:border-brand-magenta hover:bg-purple-50 transition-all flex justify-between items-center group">
+                                    <span class="font-medium">Inbound / content</span>
+                                    <svg class="w-5 h-5 text-gray-300 group-hover:text-brand-magenta transition-colors"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </button>
+                                <button type="button" onclick="goToStep(4)"
+                                    class="w-full text-left p-4 rounded-xl border-2 border-gray-100 hover:border-brand-magenta hover:bg-purple-50 transition-all flex justify-between items-center group">
+                                    <span class="font-medium">We don't have a consistent system</span>
+                                    <svg class="w-5 h-5 text-gray-300 group-hover:text-brand-magenta transition-colors"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div id="step-4" class="step-content">
+                            <p class="font-semibold text-heading mb-4">How soon do you need a scalable outbound channel?
+                            </p>
+                            <div class="space-y-3">
+                                <button type="button" onclick="goToStep(5)"
+                                    class="w-full text-left p-4 rounded-xl border-2 border-gray-100 hover:border-brand-magenta hover:bg-purple-50 transition-all flex justify-between items-center group">
+                                    <span class="font-medium">Immediately</span>
+                                    <svg class="w-5 h-5 text-gray-300 group-hover:text-brand-magenta transition-colors"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </button>
+                                <button type="button" onclick="goToStep(5)"
+                                    class="w-full text-left p-4 rounded-xl border-2 border-gray-100 hover:border-brand-magenta hover:bg-purple-50 transition-all flex justify-between items-center group">
+                                    <span class="font-medium">Within 30 days</span>
+                                    <svg class="w-5 h-5 text-gray-300 group-hover:text-brand-magenta transition-colors"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </button>
+                                <button type="button" onclick="goToStep(5)"
+                                    class="w-full text-left p-4 rounded-xl border-2 border-gray-100 hover:border-brand-magenta hover:bg-purple-50 transition-all flex justify-between items-center group">
+                                    <span class="font-medium">Within 90 days</span>
+                                    <svg class="w-5 h-5 text-gray-300 group-hover:text-brand-magenta transition-colors"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </button>
+                                <button type="button" onclick="goToStep(5)"
+                                    class="w-full text-left p-4 rounded-xl border-2 border-gray-100 hover:border-brand-magenta hover:bg-purple-50 transition-all flex justify-between items-center group">
+                                    <span class="font-medium">Just exploring</span>
+                                    <svg class="w-5 h-5 text-gray-300 group-hover:text-brand-magenta transition-colors"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Step 5 - Contact -->
+                        <div id="step-5" class="step-content">
+                            <p class="font-semibold text-heading mb-4">Almost done — enter your details below.</p>
+                            <div class="space-y-4">
+                                <div class="grid grid-cols-2 gap-3">
+                                    <input type="text" placeholder="First Name" required
+                                        class="w-full p-3 border border-gray-200 rounded-xl focus:outline-none focus:border-brand-magenta focus:ring-1 focus:ring-brand-magenta/30">
+                                    <input type="text" placeholder="Last Name" required
+                                        class="w-full p-3 border border-gray-200 rounded-xl focus:outline-none focus:border-brand-magenta focus:ring-1 focus:ring-brand-magenta/30">
+                                </div>
+                                <input type="email" placeholder="Email Address" required
+                                    class="w-full p-3 border border-gray-200 rounded-xl focus:outline-none focus:border-brand-magenta focus:ring-1 focus:ring-brand-magenta/30">
+                                <input type="tel" placeholder="Phone Number" required
+                                    class="w-full p-3 border border-gray-200 rounded-xl focus:outline-none focus:border-brand-magenta focus:ring-1 focus:ring-brand-magenta/30">
+                                <button type="submit"
+                                    class="w-full btn-primary justify-center py-4 text-lg shadow-lg shadow-brand-magenta/20">Book
+                                    My Strategy Call <span>&rsaquo;</span></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOGO PROOF BAR -->
+    <section class="bg-white py-10 border-b border-gray-100 overflow-hidden">
+        <p class="text-center text-xs font-bold text-gray-400 uppercase tracking-widest mb-8">Trusted by B2B companies
+            generating $500K–$10M+</p>
+        <div class="logo-scroll">
+            <div class="logo-set">
+                <img src="images/google-workspace-logo.png" alt="Google Workspace" class="h-8 md:h-10 object-contain mx-8">
+                <img src="images/close-logo.png" alt="Close" class="h-8 md:h-10 object-contain mx-8">
+                <img src="images/stripe-logo.png" alt="Stripe" class="h-8 md:h-10 object-contain mx-8">
+                <img src="images/instantly-logo.png" alt="Instantly" class="h-8 md:h-10 object-contain mx-8">
+                <img src="images/smart-lead-ai-logo.png" alt="SmartLead AI" class="h-8 md:h-10 object-contain mx-8">
+                <img src="images/course-clout-logo.png" alt="CourseClout" class="h-8 md:h-10 object-contain mx-8">
+                <img src="images/dominate-marketing-logo.png" alt="Dominate Marketing" class="h-8 md:h-10 object-contain mx-8">
+                <img src="images/virtual-staging-ai-logo.png" alt="Virtual Staging AI" class="h-8 md:h-10 object-contain mx-8">
+                <img src="images/fastwill-logo.png" alt="FastWill" class="h-8 md:h-10 object-contain mx-8">
+                <img src="images/leadfins-logo.png" alt="LeadFins" class="h-8 md:h-10 object-contain mx-8">
+                <img src="images/monetize-mail-logo.png" alt="Monetize Mail" class="h-8 md:h-10 object-contain mx-8">
+                <img src="images/incus-logo.png" alt="Incus" class="h-8 md:h-10 object-contain mx-8">
+                <img src="images/nexaflair-logo.png" alt="NexaFlair" class="h-8 md:h-10 object-contain mx-8">
+                <img src="images/the-barbell-box-logo.png" alt="The Barbell Box" class="h-8 md:h-10 object-contain mx-8">
+                <img src="images/model-nova-logo.png" alt="Model Nova" class="h-8 md:h-10 object-contain mx-8">
+                <img src="images/demandology-logo.png" alt="Demandology" class="h-8 md:h-10 object-contain mx-8">
+            </div>
+            <div class="logo-set">
+                <img src="images/google-workspace-logo.png" alt="Google Workspace" class="h-8 md:h-10 object-contain mx-8">
+                <img src="images/close-logo.png" alt="Close" class="h-8 md:h-10 object-contain mx-8">
+                <img src="images/stripe-logo.png" alt="Stripe" class="h-8 md:h-10 object-contain mx-8">
+                <img src="images/instantly-logo.png" alt="Instantly" class="h-8 md:h-10 object-contain mx-8">
+                <img src="images/smart-lead-ai-logo.png" alt="SmartLead AI" class="h-8 md:h-10 object-contain mx-8">
+                <img src="images/course-clout-logo.png" alt="CourseClout" class="h-8 md:h-10 object-contain mx-8">
+                <img src="images/dominate-marketing-logo.png" alt="Dominate Marketing" class="h-8 md:h-10 object-contain mx-8">
+                <img src="images/virtual-staging-ai-logo.png" alt="Virtual Staging AI" class="h-8 md:h-10 object-contain mx-8">
+                <img src="images/fastwill-logo.png" alt="FastWill" class="h-8 md:h-10 object-contain mx-8">
+                <img src="images/leadfins-logo.png" alt="LeadFins" class="h-8 md:h-10 object-contain mx-8">
+                <img src="images/monetize-mail-logo.png" alt="Monetize Mail" class="h-8 md:h-10 object-contain mx-8">
+                <img src="images/incus-logo.png" alt="Incus" class="h-8 md:h-10 object-contain mx-8">
+                <img src="images/nexaflair-logo.png" alt="NexaFlair" class="h-8 md:h-10 object-contain mx-8">
+                <img src="images/the-barbell-box-logo.png" alt="The Barbell Box" class="h-8 md:h-10 object-contain mx-8">
+                <img src="images/model-nova-logo.png" alt="Model Nova" class="h-8 md:h-10 object-contain mx-8">
+                <img src="images/demandology-logo.png" alt="Demandology" class="h-8 md:h-10 object-contain mx-8">
+            </div>
+        </div>
+    </section>
+
+    <!-- PROOF SECTION -->
+    <section class="py-20 md:py-28 bg-page">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="section-pill mb-4">Results</span>
+                <h2 class="font-section text-heading font-medium text-3xl md:text-4xl mt-6 mb-4">What Happens When B2B
+                    Companies Stop Guessing and Start Scaling</h2>
+                <p class="text-gray-500 max-w-2xl mx-auto">Real clients. Real numbers. Real pipeline.</p>
+            </div>
+
+            <!-- Case Study Cards -->
+            <div class="grid grid-cols-1 gap-8 max-w-3xl mx-auto mb-8">
+
+                <!-- Leadfin -->
+                <div class="proof-card">
+                    <div class="p-6 md:p-8">
+                        <div class="flex items-center gap-2 mb-4">
+                            <span
+                                class="text-xs font-bold bg-brand-magenta/10 text-brand-magenta px-3 py-1 rounded-full">Financial
+                                Services</span>
+                            <span class="text-xs font-bold bg-gray-100 text-gray-600 px-3 py-1 rounded-full">B2B
+                                Agency</span>
+                        </div>
+                        <h3 class="font-bold text-heading text-xl mb-3">$120K/yr &rarr; On Track for $400K/yr</h3>
+                        <div class="grid grid-cols-3 gap-4 mb-5">
+                            <div class="text-center p-3 bg-card rounded-xl">
+                                <p class="text-2xl font-bold text-brand-magenta">15</p>
+                                <p class="text-xs text-gray-500 mt-1">Calls in 7 days</p>
+                            </div>
+                            <div class="text-center p-3 bg-card rounded-xl">
+                                <p class="text-2xl font-bold text-brand-magenta">$60K</p>
+                                <p class="text-xs text-gray-500 mt-1">Deal in week 1</p>
+                            </div>
+                            <div class="text-center p-3 bg-card rounded-xl">
+                                <p class="text-2xl font-bold text-brand-magenta">3-4x</p>
+                                <p class="text-xs text-gray-500 mt-1">Revenue growth</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-5">Ziyad was running manual Dream 100
+                            outreach
+                            and cold email for his financial services agency doing $120K/year. Within 48 hours of
+                            onboarding, we launched his LinkedIn campaign. In the first seven days, he had 15 qualified
+                            calls booked — and closed a single $60,000 deal.</p>
+                        <div class="border-t border-gray-100 pt-5">
+                            <p class="text-gray-700 italic text-sm">"Within a week, I had 15 qualified calls and closed
+                                a $60K deal. I wasn't expecting anything that fast. You guys delivered."</p>
+                            <p class="text-xs font-bold text-heading mt-2">— Zyiad, Founder, Leadfin</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dominate Marketing -->
+                <div class="proof-card">
+                    <div class="p-6 md:p-8">
+                        <div class="flex items-center gap-2 mb-4">
+                            <span
+                                class="text-xs font-bold bg-brand-magenta/10 text-brand-magenta px-3 py-1 rounded-full">YouTube
+                                Ads Agency</span>
+                            <span class="text-xs font-bold bg-gray-100 text-gray-600 px-3 py-1 rounded-full">B2B
+                                Agency</span>
+                        </div>
+                        <h3 class="font-bold text-heading text-xl mb-3">$70K/yr &rarr; Tracking $250K–$300K/yr</h3>
+                        <div class="grid grid-cols-3 gap-4 mb-5">
+                            <div class="text-center p-3 bg-card rounded-xl">
+                                <p class="text-2xl font-bold text-brand-magenta">10</p>
+                                <p class="text-xs text-gray-500 mt-1">Calls in 8 days</p>
+                            </div>
+                            <div class="text-center p-3 bg-card rounded-xl">
+                                <p class="text-2xl font-bold text-brand-magenta">$30K</p>
+                                <p class="text-xs text-gray-500 mt-1">Pipeline value</p>
+                            </div>
+                            <div class="text-center p-3 bg-card rounded-xl">
+                                <p class="text-2xl font-bold text-brand-magenta">#1</p>
+                                <p class="text-xs text-gray-500 mt-1">Best channel</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-5">Chris was bootstrapping at $70K/year with
+                            inconsistent results from YouTube ads, organic content, and cold email. Within 8 days of
+                            launching LinkedIn outbound, he had 6 qualified calls on his calendar with $30K in active
+                            pipeline.</p>
+                        <div class="border-t border-gray-100 pt-5">
+                            <p class="text-gray-700 italic text-sm">"That's better than I've done with any other
+                                channel. For a bootstrap situation, it's the best I've ever seen."</p>
+                            <p class="text-xs font-bold text-heading mt-2">— Chris, Founder, Dominate Marketing</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- The Barbell Box -->
+                <div class="proof-card">
+                    <div class="p-6 md:p-8">
+                        <div class="flex items-center gap-2 mb-4">
+                            <span
+                                class="text-xs font-bold bg-brand-magenta/10 text-brand-magenta px-3 py-1 rounded-full">B2B
+                                Product</span>
+                            <span class="text-xs font-bold bg-gray-100 text-gray-600 px-3 py-1 rounded-full">DTC</span>
+                        </div>
+                        <h3 class="font-bold text-heading text-xl mb-3">From 80% of the Week on Outreach to "Booked
+                            Solid All Day"</h3>
+                        <div class="grid grid-cols-3 gap-4 mb-5">
+                            <div class="text-center p-3 bg-card rounded-xl">
+                                <p class="text-lg font-bold text-brand-magenta">0 &rarr; &infin;</p>
+                                <p class="text-xs text-gray-500 mt-1">Response volume</p>
+                            </div>
+                            <div class="text-center p-3 bg-card rounded-xl">
+                                <p class="text-2xl font-bold text-brand-magenta">90%+</p>
+                                <p class="text-xs text-gray-500 mt-1">Close rate</p>
+                            </div>
+                            <div class="text-center p-3 bg-card rounded-xl">
+                                <p class="text-lg font-bold text-brand-magenta">Paused</p>
+                                <p class="text-xs text-gray-500 mt-1">Too much volume</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-5">James was spending 80% of his week on cold
+                            email outreach going to spam. After we built his automated LinkedIn outbound system, the
+                            volume of inbound interest was so high he considered pausing the campaign.</p>
+                        <div class="border-t border-gray-100 pt-5">
+                            <p class="text-gray-700 italic text-sm">"I've honestly contemplated turning it off because
+                                I've lost control of my inbox. It's phone call after phone call. I'm booked solid all
+                                day. These guys are the real deal."</p>
+                            <p class="text-xs font-bold text-heading mt-2">— James, Founder, The Barbell Box</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SmartLead AI -->
+                <div class="proof-card">
+                    <div class="p-6 md:p-8">
+                        <div class="flex items-center gap-2 mb-4">
+                            <span
+                                class="text-xs font-bold bg-brand-magenta/10 text-brand-magenta px-3 py-1 rounded-full">SaaS</span>
+                            <span
+                                class="text-xs font-bold bg-gray-100 text-gray-600 px-3 py-1 rounded-full">Enterprise</span>
+                        </div>
+                        <h3 class="font-bold text-heading text-xl mb-3">700+ Qualified Leads in 2 Months</h3>
+                        <div class="grid grid-cols-3 gap-4 mb-5">
+                            <div class="text-center p-3 bg-card rounded-xl">
+                                <p class="text-2xl font-bold text-brand-magenta">40K</p>
+                                <p class="text-xs text-gray-500 mt-1">Leads contacted</p>
+                            </div>
+                            <div class="text-center p-3 bg-card rounded-xl">
+                                <p class="text-2xl font-bold text-brand-magenta">700+</p>
+                                <p class="text-xs text-gray-500 mt-1">Qualified leads</p>
+                            </div>
+                            <div class="text-center p-3 bg-card rounded-xl">
+                                <p class="text-lg font-bold text-brand-magenta">$10-200K</p>
+                                <p class="text-xs text-gray-500 mt-1">Contract values</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-5">SmartLead published a case study on our
+                            results — we didn't ask them to. 40,000 leads contacted in two months, 700+ qualified leads
+                            generated, and contract values ranging from $10,000 to $200,000.</p>
+                        <div class="h-48 rounded-xl overflow-hidden mt-4">
+                            <img src="images/case-study-smartlead-banner.png" alt="SmartLead Case Study"
+                                class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Virtual Staging AI -->
+                <div class="proof-card">
+                    <div class="p-6 md:p-8">
+                        <div class="flex items-center gap-2 mb-4">
+                            <span
+                                class="text-xs font-bold bg-brand-magenta/10 text-brand-magenta px-3 py-1 rounded-full">Real
+                                Estate Tech</span>
+                            <span class="text-xs font-bold bg-gray-100 text-gray-600 px-3 py-1 rounded-full">SaaS</span>
+                        </div>
+                        <h3 class="font-bold text-heading text-xl mb-3">61 New Customers in Under 60 Days — $30K to
+                            $600K+ MRR</h3>
+                        <div class="grid grid-cols-3 gap-4 mb-5">
+                            <div class="text-center p-3 bg-card rounded-xl">
+                                <p class="text-2xl font-bold text-brand-magenta">61</p>
+                                <p class="text-xs text-gray-500 mt-1">New customers</p>
+                            </div>
+                            <div class="text-center p-3 bg-card rounded-xl">
+                                <p class="text-2xl font-bold text-brand-magenta">47%</p>
+                                <p class="text-xs text-gray-500 mt-1">Positive reply rate</p>
+                            </div>
+                            <div class="text-center p-3 bg-card rounded-xl">
+                                <p class="text-lg font-bold text-brand-magenta">$600K+</p>
+                                <p class="text-xs text-gray-500 mt-1">MRR achieved</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-5">Virtual Staging AI was spending $30K/month on
+                            paid ads as their only acquisition channel. We built a parallel outbound engine — 3,012
+                            prospects contacted, 75 positive replies, 61 new paying customers acquired. They scaled from
+                            $30K to $600K+ MRR.</p>
+                        <img src="images/virtual-staging-ai-results.png" alt="Virtual Staging AI SmartLead Dashboard — 3,012 contacted, 75 positive replies, 47.17% positive rate" class="w-full rounded-xl">
+                    </div>
+                </div>
+
+                <!-- Incus Services -->
+                <div class="proof-card">
+                    <div class="p-6 md:p-8">
+                        <div class="flex items-center gap-2 mb-4">
+                            <span
+                                class="text-xs font-bold bg-brand-magenta/10 text-brand-magenta px-3 py-1 rounded-full">HR
+                                Consulting</span>
+                            <span
+                                class="text-xs font-bold bg-gray-100 text-gray-600 px-3 py-1 rounded-full">Training</span>
+                        </div>
+                        <h3 class="font-bold text-heading text-xl mb-3">45 Qualified Calls and $610K Pipeline in Under
+                            60 Days</h3>
+                        <div class="grid grid-cols-3 gap-4 mb-5">
+                            <div class="text-center p-3 bg-card rounded-xl">
+                                <p class="text-2xl font-bold text-brand-magenta">45</p>
+                                <p class="text-xs text-gray-500 mt-1">Calls in 60 days</p>
+                            </div>
+                            <div class="text-center p-3 bg-card rounded-xl">
+                                <p class="text-lg font-bold text-brand-magenta">$610K</p>
+                                <p class="text-xs text-gray-500 mt-1">Pipeline value</p>
+                            </div>
+                            <div class="text-center p-3 bg-card rounded-xl">
+                                <p class="text-2xl font-bold text-brand-magenta">20x</p>
+                                <p class="text-xs text-gray-500 mt-1">Workshop attendance</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-5">Incus Services needed a predictable pipeline
+                            for their HR consulting and training business. Cold email infrastructure was live within 48
+                            hours. 44,100+ emails sent across 6 campaigns, 173 interested replies, 218 identified
+                            opportunities, and $610K in pipeline value added.</p>
+                        <img src="images/incus-results.png" alt="Incus Services Instantly.ai Dashboard — 44.1K sent, 173 interested, 45 meetings booked, $610K pipeline" class="w-full rounded-xl">
+                    </div>
+                </div>
+
+                <!-- Monetize Mail -->
+                <div class="proof-card">
+                    <div class="p-6 md:p-8">
+                        <div class="flex items-center gap-2 mb-4">
+                            <span
+                                class="text-xs font-bold bg-brand-magenta/10 text-brand-magenta px-3 py-1 rounded-full">Email
+                                Marketing</span>
+                            <span
+                                class="text-xs font-bold bg-gray-100 text-gray-600 px-3 py-1 rounded-full">E-commerce</span>
+                        </div>
+                        <h3 class="font-bold text-heading text-xl mb-3">10 Qualified Appointments with 7-Figure Brands
+                            in 10 Days</h3>
+                        <div class="grid grid-cols-3 gap-4 mb-5">
+                            <div class="text-center p-3 bg-card rounded-xl">
+                                <p class="text-2xl font-bold text-brand-magenta">10</p>
+                                <p class="text-xs text-gray-500 mt-1">Calls in 10 days</p>
+                            </div>
+                            <div class="text-center p-3 bg-card rounded-xl">
+                                <p class="text-lg font-bold text-brand-magenta">$40K</p>
+                                <p class="text-xs text-gray-500 mt-1">Pipeline added</p>
+                            </div>
+                            <div class="text-center p-3 bg-card rounded-xl">
+                                <p class="text-lg font-bold text-brand-magenta">4,919</p>
+                                <p class="text-xs text-gray-500 mt-1">Leads contacted</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-5">Monetize Mail's email marketing agency had
+                            inconsistent lead flow and no scalable outbound channel. Within the first 10 days of
+                            launching, we generated 10 qualified appointments with 7-figure e-commerce brands and added
+                            $40K to their pipeline.</p>
+                        <div class="grid grid-cols-2 gap-3 mb-5">
+                            <img src="images/monetize-mail-results.png" alt="Monetize Mail SmartLead Dashboard — 4,919 contacted, 89 replied" class="w-full rounded-xl">
+                            <img src="images/monetize-mail-results-2.png" alt="Monetize Mail SmartLead Dashboard — 1,429 contacted, 35 replied" class="w-full rounded-xl">
+                        </div>
+                        <div class="border-t border-gray-100 pt-5">
+                            <p class="text-gray-700 italic text-sm">"The level of professionalism is really high in
+                                outbound and my calendar hasn't been this packed in a while."</p>
+                            <p class="text-xs font-bold text-heading mt-2">— Founder, Monetize Mail</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NexaFlair -->
+                <div class="proof-card">
+                    <div class="p-6 md:p-8">
+                        <div class="flex items-center gap-2 mb-4">
+                            <span
+                                class="text-xs font-bold bg-brand-magenta/10 text-brand-magenta px-3 py-1 rounded-full">Agency</span>
+                            <span class="text-xs font-bold bg-gray-100 text-gray-600 px-3 py-1 rounded-full">Coaching
+                                Client</span>
+                        </div>
+                        <h3 class="font-bold text-heading text-xl mb-3">Closed First $13,000 Client Using LinkedIn
+                            Strategy</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-5">NexaFlair's agency was struggling with
+                            client acquisition. After coaching on LinkedIn outbound strategy and targeting, they closed
+                            their first client for $13,000 using the exact playbook we teach.</p>
+                        <div class="border-t border-gray-100 pt-5">
+                            <p class="text-gray-700 italic text-sm">"They were able to see my exact situation and give
+                                me a blueprint on exactly how I should go about getting leads. I was then able to secure
+                                my first client for just over $13,000."</p>
+                            <p class="text-xs font-bold text-heading mt-2">— Founder, NexaFlair</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CourseClout -->
+                <div class="proof-card">
+                    <div class="p-6 md:p-8">
+                        <div class="flex items-center gap-2 mb-4">
+                            <span
+                                class="text-xs font-bold bg-brand-magenta/10 text-brand-magenta px-3 py-1 rounded-full">Education
+                                / Courses</span>
+                            <span class="text-xs font-bold bg-gray-100 text-gray-600 px-3 py-1 rounded-full">B2B</span>
+                        </div>
+                        <h3 class="font-bold text-heading text-xl mb-3">$15K+ Signed in First 10 Days — 31.7% Interested
+                            Reply Rate</h3>
+                        <div class="grid grid-cols-3 gap-4 mb-5">
+                            <div class="text-center p-3 bg-card rounded-xl">
+                                <p class="text-2xl font-bold text-brand-magenta">$15K+</p>
+                                <p class="text-xs text-gray-500 mt-1">Signed in 10 days</p>
+                            </div>
+                            <div class="text-center p-3 bg-card rounded-xl">
+                                <p class="text-2xl font-bold text-brand-magenta">31.7%</p>
+                                <p class="text-xs text-gray-500 mt-1">Interested rate</p>
+                            </div>
+                            <div class="text-center p-3 bg-card rounded-xl">
+                                <p class="text-lg font-bold text-brand-magenta">1,526</p>
+                                <p class="text-xs text-gray-500 mt-1">Messages sent</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-5">CourseClout's premium education studio ($1.5M+
+                            revenue, 150+ courses produced) was stuck on Upwork and referrals. On a completely cold
+                            LinkedIn campaign, we hit a 31.7% interested reply rate and signed a $15K+ client within the
+                            first 10 days.</p>
+                        <div class="grid grid-cols-2 gap-3">
+                            <img src="images/courseclout-results.jpeg" alt="CourseClout 10-day results — 500 messages, 41 replies, 31.7% interested rate" class="w-full rounded-xl">
+                            <img src="images/courseclout-results-2.jpeg" alt="CourseClout all campaigns — 1,526 messages, 125 replies" class="w-full rounded-xl">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Testimonial Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-2xl border border-gray-100">
+                    <p class="text-gray-700 italic text-sm leading-relaxed mb-4">"We've been burned by agencies before
+                        but the guarantee made it a no-brainer."</p>
+                    <p class="text-xs font-bold text-heading">— B2B Founder, $1.5M ARR</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-gray-100">
+                    <p class="text-gray-700 italic text-sm leading-relaxed mb-4">"Cold email just isn't working anymore.
+                        We needed a new channel."</p>
+                    <p class="text-xs font-bold text-heading">— B2B Agency Owner</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-gray-100">
+                    <p class="text-gray-700 italic text-sm leading-relaxed mb-4">"I don't have time to do outreach
+                        myself and I can't justify hiring an SDR right now."</p>
+                    <p class="text-xs font-bold text-heading">— SaaS Founder, $2M ARR</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-gray-100">
+                    <p class="text-gray-700 italic text-sm leading-relaxed mb-4">"I didn't even know you could send that
+                        many messages on LinkedIn. That changes everything."</p>
+                    <p class="text-xs font-bold text-heading">— B2B Services, $500K ARR</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-gray-100">
+                    <p class="text-gray-700 italic text-sm leading-relaxed mb-4">"I need qualified calls in the
+                        calendar, not leads in a spreadsheet."</p>
+                    <p class="text-xs font-bold text-heading">— Agency Founder</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-gray-100">
+                    <p class="text-gray-700 italic text-sm leading-relaxed mb-4">"The fact that you manage the inbox and
+                        book the calls is the part that sold me. I just show up."</p>
+                    <p class="text-xs font-bold text-heading">— B2B SaaS, $3M ARR</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-gray-100">
+                    <p class="text-gray-700 italic text-sm leading-relaxed mb-4">"We tried LinkedIn automation before
+                        and got banned. Knowing you've never had a ban was the thing that gave me confidence."</p>
+                    <p class="text-xs font-bold text-heading">— B2B Services Founder</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-gray-100">
+                    <p class="text-gray-700 italic text-sm leading-relaxed mb-4">"20 meetings or you work for free —
+                        that's the only guarantee I've seen in this space."</p>
+                    <p class="text-xs font-bold text-heading">— Recruiting Agency, $1M ARR</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-gray-100">
+                    <p class="text-gray-700 italic text-sm leading-relaxed mb-4">"This gives us the output of a full
+                        outbound team at a fraction of the cost."</p>
+                    <p class="text-xs font-bold text-heading">— B2B Agency, $700K ARR</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-gray-100">
+                    <p class="text-gray-700 italic text-sm leading-relaxed mb-4">"Models like yours where you feel like
+                        the agency has some skin in the game is why I responded."</p>
+                    <p class="text-xs font-bold text-heading">— Bobby, Agency Founder</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-gray-100">
+                    <p class="text-gray-700 italic text-sm leading-relaxed mb-4">"Results almost instantly. Better
+                        response rates than cold email ever got me."</p>
+                    <p class="text-xs font-bold text-heading">— Chris, Dominate Marketing</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-gray-100">
+                    <p class="text-gray-700 italic text-sm leading-relaxed mb-4">"I didn't have to do anything on my
+                        side. The calls were booked. The leads were qualified. It was pretty hands-off."</p>
+                    <p class="text-xs font-bold text-heading">— Ziyad, Leadfin</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-gray-100">
+                    <p class="text-gray-700 italic text-sm leading-relaxed mb-4">"Those guys are serious about it. They
+                        communicate every day with you. There's a whole system behind it — very well structured."</p>
+                    <p class="text-xs font-bold text-heading">— Ziyad, Leadfin</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-gray-100">
+                    <p class="text-gray-700 italic text-sm leading-relaxed mb-4">"This has been something that's been so
+                        painful for the growth of this business. It's been the thing holding us back. These guys are the
+                        real deal."</p>
+                    <p class="text-xs font-bold text-heading">— James, The Barbell Box</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-gray-100">
+                    <p class="text-gray-700 italic text-sm leading-relaxed mb-4">"If it works then you have a client for
+                        life. We never going to turn."</p>
+                    <p class="text-xs font-bold text-heading">— Giorgi, B2B Founder</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="py-20 md:py-28 bg-white">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="section-pill mb-4">FAQ</span>
+                <h2 class="font-section text-heading font-medium text-3xl md:text-4xl mt-6">Frequently Asked Questions
+                </h2>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ 1 -->
+                <div class="bg-page rounded-xl border border-gray-200 overflow-hidden">
+                    <button onclick="toggleFaq(this)"
+                        class="w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors">
+                        <span class="font-bold text-heading pr-4">Won't my LinkedIn account get banned?</span>
+                        <svg class="w-5 h-5 text-brand-magenta flex-shrink-0 transform transition-transform duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer px-6 pb-6">
+                        <p class="text-gray-600 leading-relaxed text-sm">We don't use your account. We don't touch your
+                            profile. We build a completely separate, dedicated LinkedIn profile — US-based, ID-verified.
+                            Your personal LinkedIn is never at risk. We've never had a single account banned across
+                            every account we've ever managed.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="bg-page rounded-xl border border-gray-200 overflow-hidden">
+                    <button onclick="toggleFaq(this)"
+                        class="w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors">
+                        <span class="font-bold text-heading pr-4">What's the guarantee?</span>
+                        <svg class="w-5 h-5 text-brand-magenta flex-shrink-0 transform transition-transform duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer px-6 pb-6">
+                        <p class="text-gray-600 leading-relaxed text-sm">20 qualified meetings per month or we work for
+                            free until we hit that number. It's in the contract. We have skin in the game — if we don't
+                            perform, we don't get paid.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="bg-page rounded-xl border border-gray-200 overflow-hidden">
+                    <button onclick="toggleFaq(this)"
+                        class="w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors">
+                        <span class="font-bold text-heading pr-4">How quickly can we launch?</span>
+                        <svg class="w-5 h-5 text-brand-magenta flex-shrink-0 transform transition-transform duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer px-6 pb-6">
+                        <p class="text-gray-600 leading-relaxed text-sm">Everything is up and running within 48 hours of
+                            onboarding. No 14-day warm-up period. By the end of the week, your campaign is live and
+                            InMails are being sent.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="bg-page rounded-xl border border-gray-200 overflow-hidden">
+                    <button onclick="toggleFaq(this)"
+                        class="w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors">
+                        <span class="font-bold text-heading pr-4">How is this different from other LinkedIn agencies or
+                            tools?</span>
+                        <svg class="w-5 h-5 text-brand-magenta flex-shrink-0 transform transition-transform duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer px-6 pb-6">
+                        <p class="text-gray-600 leading-relaxed text-sm">Most LinkedIn outreach is capped at 300–400
+                            messages per month. We send 5,000–10,000 InMails per month using proprietary software we
+                            built in-house. That's 10–25x the volume. Plus, we handle everything — targeting, messaging,
+                            inbox management, lead qualification, and call booking. You don't touch any of it.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div class="bg-page rounded-xl border border-gray-200 overflow-hidden">
+                    <button onclick="toggleFaq(this)"
+                        class="w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors">
+                        <span class="font-bold text-heading pr-4">How do you make sure the meetings are actually
+                            qualified?</span>
+                        <svg class="w-5 h-5 text-brand-magenta flex-shrink-0 transform transition-transform duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer px-6 pb-6">
+                        <p class="text-gray-600 leading-relaxed text-sm">Trained inbox managers classify intent, respond
+                            in your voice, handle objections, qualify leads against your ICP criteria, and only book
+                            calls with people who match. You're not getting junk meetings to hit a number.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 6 -->
+                <div class="bg-page rounded-xl border border-gray-200 overflow-hidden">
+                    <button onclick="toggleFaq(this)"
+                        class="w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors">
+                        <span class="font-bold text-heading pr-4">What kind of businesses does this work for?</span>
+                        <svg class="w-5 h-5 text-brand-magenta flex-shrink-0 transform transition-transform duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer px-6 pb-6">
+                        <p class="text-gray-600 leading-relaxed text-sm">B2B companies selling products or services to
+                            other businesses. You need to be doing at least $500K/year in revenue, with an offer of at
+                            least $5K per client. If your buyers have a job title, they're on LinkedIn and we can reach
+                            them.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 7 -->
+                <div class="bg-page rounded-xl border border-gray-200 overflow-hidden">
+                    <button onclick="toggleFaq(this)"
+                        class="w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors">
+                        <span class="font-bold text-heading pr-4">Is there a long-term contract?</span>
+                        <svg class="w-5 h-5 text-brand-magenta flex-shrink-0 transform transition-transform duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer px-6 pb-6">
+                        <p class="text-gray-600 leading-relaxed text-sm">No. It's a one-time investment for a 90-day
+                            sprint. No monthly retainer. No lock-in. If we deliver results, you'll want to keep going.
+                            If we don't, the guarantee kicks in.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOTTOM CTA SECTION -->
+    <section class="dark-section glow-bottom py-20 md:py-28 relative">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <h2 class="font-section text-white font-medium text-3xl md:text-4xl mb-4">Ready to Fill Your Calendar With
+                Qualified Sales Calls?</h2>
+            <p class="text-gray-400 mb-10 text-lg">Apply below. Takes 60 seconds. We'll tell you if this is a fit on a
+                short strategy call.</p>
+
+            <!-- FORM 2 -->
+            <div class="bg-white rounded-2xl p-6 md:p-8 shadow-xl max-w-lg mx-auto text-left">
+                <div class="flex justify-between text-xs font-bold text-heading uppercase tracking-widest mb-2">
+                    <span>Qualification</span>
+                    <span id="step-indicator-2">Step 1 of 5</span>
+                </div>
+                <div class="w-full h-1 bg-gray-100 rounded-full mb-6">
+                    <div id="progress-bar-2" class="h-full bg-brand-magenta rounded-full transition-all duration-500"
+                        style="width: 20%"></div>
+                </div>
+
+                <form id="multi-step-form-2">
+                    <!-- Step 1 -->
+                    <div id="step2-1" class="step-content active">
+                        <p class="font-semibold text-heading mb-4">What best describes your business?</p>
+                        <div class="space-y-3">
+                            <button type="button" onclick="goToStep2(2)"
+                                class="w-full text-left p-4 rounded-xl border-2 border-gray-100 hover:border-brand-magenta hover:bg-purple-50 transition-all flex justify-between items-center group"><span
+                                    class="font-medium">B2B SaaS</span><svg
+                                    class="w-5 h-5 text-gray-300 group-hover:text-brand-magenta" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7"></path>
+                                </svg></button>
+                            <button type="button" onclick="goToStep2(2)"
+                                class="w-full text-left p-4 rounded-xl border-2 border-gray-100 hover:border-brand-magenta hover:bg-purple-50 transition-all flex justify-between items-center group"><span
+                                    class="font-medium">B2B Agency / Consultancy</span><svg
+                                    class="w-5 h-5 text-gray-300 group-hover:text-brand-magenta" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7"></path>
+                                </svg></button>
+                            <button type="button" onclick="goToStep2(2)"
+                                class="w-full text-left p-4 rounded-xl border-2 border-gray-100 hover:border-brand-magenta hover:bg-purple-50 transition-all flex justify-between items-center group"><span
+                                    class="font-medium">Professional Services</span><svg
+                                    class="w-5 h-5 text-gray-300 group-hover:text-brand-magenta" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7"></path>
+                                </svg></button>
+                            <button type="button" onclick="goToStep2(2)"
+                                class="w-full text-left p-4 rounded-xl border-2 border-gray-100 hover:border-brand-magenta hover:bg-purple-50 transition-all flex justify-between items-center group"><span
+                                    class="font-medium">Staffing / Recruiting</span><svg
+                                    class="w-5 h-5 text-gray-300 group-hover:text-brand-magenta" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7"></path>
+                                </svg></button>
+                            <button type="button" onclick="goToStep2(2)"
+                                class="w-full text-left p-4 rounded-xl border-2 border-gray-100 hover:border-brand-magenta hover:bg-purple-50 transition-all flex justify-between items-center group"><span
+                                    class="font-medium">Other</span><svg
+                                    class="w-5 h-5 text-gray-300 group-hover:text-brand-magenta" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7"></path>
+                                </svg></button>
+                        </div>
+                    </div>
+                    <!-- Step 2 -->
+                    <div id="step2-2" class="step-content">
+                        <p class="font-semibold text-heading mb-4">What is your current annual revenue?</p>
+                        <div class="space-y-3">
+                            <button type="button" onclick="goToStep2(3)"
+                                class="w-full text-left p-4 rounded-xl border-2 border-gray-100 hover:border-brand-magenta hover:bg-purple-50 transition-all flex justify-between items-center group"><span
+                                    class="font-medium">Under $500K</span><svg
+                                    class="w-5 h-5 text-gray-300 group-hover:text-brand-magenta" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7"></path>
+                                </svg></button>
+                            <button type="button" onclick="goToStep2(3)"
+                                class="w-full text-left p-4 rounded-xl border-2 border-gray-100 hover:border-brand-magenta hover:bg-purple-50 transition-all flex justify-between items-center group"><span
+                                    class="font-medium">$500K – $1M</span><svg
+                                    class="w-5 h-5 text-gray-300 group-hover:text-brand-magenta" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7"></path>
+                                </svg></button>
+                            <button type="button" onclick="goToStep2(3)"
+                                class="w-full text-left p-4 rounded-xl border-2 border-gray-100 hover:border-brand-magenta hover:bg-purple-50 transition-all flex justify-between items-center group"><span
+                                    class="font-medium">$1M – $5M</span><svg
+                                    class="w-5 h-5 text-gray-300 group-hover:text-brand-magenta" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7"></path>
+                                </svg></button>
+                            <button type="button" onclick="goToStep2(3)"
+                                class="w-full text-left p-4 rounded-xl border-2 border-gray-100 hover:border-brand-magenta hover:bg-purple-50 transition-all flex justify-between items-center group"><span
+                                    class="font-medium">$5M – $10M</span><svg
+                                    class="w-5 h-5 text-gray-300 group-hover:text-brand-magenta" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7"></path>
+                                </svg></button>
+                            <button type="button" onclick="goToStep2(3)"
+                                class="w-full text-left p-4 rounded-xl border-2 border-gray-100 hover:border-brand-magenta hover:bg-purple-50 transition-all flex justify-between items-center group"><span
+                                    class="font-medium">$10M+</span><svg
+                                    class="w-5 h-5 text-gray-300 group-hover:text-brand-magenta" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7"></path>
+                                </svg></button>
+                        </div>
+                    </div>
+                    <!-- Step 3 -->
+                    <div id="step2-3" class="step-content">
+                        <p class="font-semibold text-heading mb-4">How are you currently generating pipeline?</p>
+                        <div class="space-y-3">
+                            <button type="button" onclick="goToStep2(4)"
+                                class="w-full text-left p-4 rounded-xl border-2 border-gray-100 hover:border-brand-magenta hover:bg-purple-50 transition-all flex justify-between items-center group"><span
+                                    class="font-medium">Referrals / word of mouth</span><svg
+                                    class="w-5 h-5 text-gray-300 group-hover:text-brand-magenta" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7"></path>
+                                </svg></button>
+                            <button type="button" onclick="goToStep2(4)"
+                                class="w-full text-left p-4 rounded-xl border-2 border-gray-100 hover:border-brand-magenta hover:bg-purple-50 transition-all flex justify-between items-center group"><span
+                                    class="font-medium">Cold email</span><svg
+                                    class="w-5 h-5 text-gray-300 group-hover:text-brand-magenta" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7"></path>
+                                </svg></button>
+                            <button type="button" onclick="goToStep2(4)"
+                                class="w-full text-left p-4 rounded-xl border-2 border-gray-100 hover:border-brand-magenta hover:bg-purple-50 transition-all flex justify-between items-center group"><span
+                                    class="font-medium">LinkedIn outreach</span><svg
+                                    class="w-5 h-5 text-gray-300 group-hover:text-brand-magenta" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7"></path>
+                                </svg></button>
+                            <button type="button" onclick="goToStep2(4)"
+                                class="w-full text-left p-4 rounded-xl border-2 border-gray-100 hover:border-brand-magenta hover:bg-purple-50 transition-all flex justify-between items-center group"><span
+                                    class="font-medium">Paid ads</span><svg
+                                    class="w-5 h-5 text-gray-300 group-hover:text-brand-magenta" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7"></path>
+                                </svg></button>
+                            <button type="button" onclick="goToStep2(4)"
+                                class="w-full text-left p-4 rounded-xl border-2 border-gray-100 hover:border-brand-magenta hover:bg-purple-50 transition-all flex justify-between items-center group"><span
+                                    class="font-medium">Inbound / content</span><svg
+                                    class="w-5 h-5 text-gray-300 group-hover:text-brand-magenta" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7"></path>
+                                </svg></button>
+                            <button type="button" onclick="goToStep2(4)"
+                                class="w-full text-left p-4 rounded-xl border-2 border-gray-100 hover:border-brand-magenta hover:bg-purple-50 transition-all flex justify-between items-center group"><span
+                                    class="font-medium">We don't have a consistent system</span><svg
+                                    class="w-5 h-5 text-gray-300 group-hover:text-brand-magenta" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7"></path>
+                                </svg></button>
+                        </div>
+                    </div>
+                    <!-- Step 4 -->
+                    <div id="step2-4" class="step-content">
+                        <p class="font-semibold text-heading mb-4">How soon do you need a scalable outbound channel?</p>
+                        <div class="space-y-3">
+                            <button type="button" onclick="goToStep2(5)"
+                                class="w-full text-left p-4 rounded-xl border-2 border-gray-100 hover:border-brand-magenta hover:bg-purple-50 transition-all flex justify-between items-center group"><span
+                                    class="font-medium">Immediately</span><svg
+                                    class="w-5 h-5 text-gray-300 group-hover:text-brand-magenta" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7"></path>
+                                </svg></button>
+                            <button type="button" onclick="goToStep2(5)"
+                                class="w-full text-left p-4 rounded-xl border-2 border-gray-100 hover:border-brand-magenta hover:bg-purple-50 transition-all flex justify-between items-center group"><span
+                                    class="font-medium">Within 30 days</span><svg
+                                    class="w-5 h-5 text-gray-300 group-hover:text-brand-magenta" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7"></path>
+                                </svg></button>
+                            <button type="button" onclick="goToStep2(5)"
+                                class="w-full text-left p-4 rounded-xl border-2 border-gray-100 hover:border-brand-magenta hover:bg-purple-50 transition-all flex justify-between items-center group"><span
+                                    class="font-medium">Within 90 days</span><svg
+                                    class="w-5 h-5 text-gray-300 group-hover:text-brand-magenta" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7"></path>
+                                </svg></button>
+                            <button type="button" onclick="goToStep2(5)"
+                                class="w-full text-left p-4 rounded-xl border-2 border-gray-100 hover:border-brand-magenta hover:bg-purple-50 transition-all flex justify-between items-center group"><span
+                                    class="font-medium">Just exploring</span><svg
+                                    class="w-5 h-5 text-gray-300 group-hover:text-brand-magenta" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7"></path>
+                                </svg></button>
+                        </div>
+                    </div>
+                    <!-- Step 5 -->
+                    <div id="step2-5" class="step-content">
+                        <p class="font-semibold text-heading mb-4">Almost done — enter your details below.</p>
+                        <div class="space-y-4">
+                            <div class="grid grid-cols-2 gap-3">
+                                <input type="text" placeholder="First Name" required
+                                    class="w-full p-3 border border-gray-200 rounded-xl focus:outline-none focus:border-brand-magenta focus:ring-1 focus:ring-brand-magenta/30">
+                                <input type="text" placeholder="Last Name" required
+                                    class="w-full p-3 border border-gray-200 rounded-xl focus:outline-none focus:border-brand-magenta focus:ring-1 focus:ring-brand-magenta/30">
+                            </div>
+                            <input type="email" placeholder="Email Address" required
+                                class="w-full p-3 border border-gray-200 rounded-xl focus:outline-none focus:border-brand-magenta focus:ring-1 focus:ring-brand-magenta/30">
+                            <input type="tel" placeholder="Phone Number" required
+                                class="w-full p-3 border border-gray-200 rounded-xl focus:outline-none focus:border-brand-magenta focus:ring-1 focus:ring-brand-magenta/30">
+                            <button type="submit"
+                                class="w-full btn-primary justify-center py-4 text-lg shadow-lg shadow-brand-magenta/20">Book
+                                My Strategy Call <span>&rsaquo;</span></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="dark-section glow-bottom py-16 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                <div>
+                    <span class="font-heading font-bold text-xl text-white tracking-tight">129 SCALED</span>
+                    <p class="text-gray-400 text-sm mt-2 max-w-md">Done-for-you LinkedIn outbound lead generation at
+                        scale. 5,000–10,000 InMails per month. 20 qualified meetings guaranteed.</p>
+                </div>
+                <div class="flex items-center gap-4 text-xs text-gray-500">
+                    <a href="#" class="hover:text-gray-300 transition-colors">Terms of Service</a>
+                    <a href="#" class="hover:text-gray-300 transition-colors">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-6 text-center">
+                <p class="text-gray-500 text-xs">&copy; 2026 129 Scaled. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Form 1 (Hero)
+        function goToStep(step) {
+            document.querySelectorAll('#multi-step-form .step-content').forEach(s => s.classList.remove('active'));
+            document.getElementById('step-' + step).classList.add('active');
+            document.getElementById('step-indicator').innerText = 'Step ' + step + ' of 5';
+            document.getElementById('progress-bar').style.width = (step / 5 * 100) + '%';
+        }
+
+        // Form 2 (Bottom CTA)
+        function goToStep2(step) {
+            document.querySelectorAll('#multi-step-form-2 .step-content').forEach(s => s.classList.remove('active'));
+            document.getElementById('step2-' + step).classList.add('active');
+            document.getElementById('step-indicator-2').innerText = 'Step ' + step + ' of 5';
+            document.getElementById('progress-bar-2').style.width = (step / 5 * 100) + '%';
+        }
+
+        // Form submissions
+        document.getElementById('multi-step-form').onsubmit = function (e) {
+            e.preventDefault();
+            window.location.href = '/thankyou';
+        };
+        document.getElementById('multi-step-form-2').onsubmit = function (e) {
+            e.preventDefault();
+            window.location.href = '/thankyou';
+        };
+
+        // FAQ Accordion
+        function toggleFaq(button) {
+            const answer = button.nextElementSibling;
+            const icon = button.querySelector('svg');
+            answer.classList.toggle('open');
+            icon.classList.toggle('rotate-180');
+        }
+    </script>
+
+</body>
+
+</html>
